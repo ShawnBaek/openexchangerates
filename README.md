@@ -3,6 +3,35 @@ OpenExchangeRates Swift Client API
 
 ### How to use
 
+- Use CocoaPod
+
+
+- Use Manually
+
+
+#### OpenExchangeRates.swift
+```swift
+struct OpenExchangeRates: Decodable {
+        let timestamp: Double
+        let base: String
+        let rates: [String: Double]
+        let date: Date
+        
+        enum CodingKeys: String, CodingKey {
+            case timestamp
+            case base
+            case rates
+        }
+        init(from decoder: Decoder) throws {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            timestamp = try container.decode(Double.self, forKey: .timestamp)
+            base = try container.decode(String.self, forKey: .base)
+            rates = try container.decode([String:Double].self, forKey: .rates)
+            date = Date(timeIntervalSince1970: timestamp)
+        }
+    }
+```
+
 
 
 #### Response from OpenExchangeRates API
