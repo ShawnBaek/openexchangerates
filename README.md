@@ -1,5 +1,8 @@
-# openexchangerates
+# [OpenExchangeRates](https://openexchangerates.org/) for Swift
 OpenExchangeRates Swift Client API
+
+### How to use
+
 
 
 #### Response from OpenExchangeRates API
