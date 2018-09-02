@@ -2,7 +2,7 @@
 OpenExchangeRates Swift Client API
 
 
-## Response from OpenExchangeRates API
+#### Response from OpenExchangeRates API
 ```javascript
 {
     "disclaimer": "Usage subject to terms: https://openexchangerates.org/terms",
