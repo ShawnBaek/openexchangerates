@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'OpenExchangeRatesClient_Example' do
+  pod 'OpenExchangeRatesClient', :path => '../'
+
+  target 'OpenExchangeRatesClient_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
