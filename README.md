@@ -1,5 +1,6 @@
 # [OpenExchangeRates](https://openexchangerates.org/) for Swift
 
+
 [![CI Status](https://img.shields.io/travis/shawnbaek/OpenExchangeRatesClient.svg?style=flat)](https://travis-ci.org/shawnbaek/OpenExchangeRatesClient)
 [![Version](https://img.shields.io/cocoapods/v/OpenExchangeRatesClient.svg?style=flat)](https://cocoapods.org/pods/OpenExchangeRatesClient)
 [![License](https://img.shields.io/cocoapods/l/OpenExchangeRatesClient.svg?style=flat)](https://cocoapods.org/pods/OpenExchangeRatesClient)
@@ -33,9 +34,19 @@ openExchangeRatesClient.getRates(base: "USD") { (rates, error) in
 }
 ```
 
+
+### How to use
+
+- Use CocoaPod
+
+
+- Use Manually
+
+
 #### OpenExchangeRates.swift
 ```swift
 struct OpenExchangeRates: Decodable {
+<<<<<<< HEAD
 let timestamp: Double
 let base: String
 let rates: [String: Double]
@@ -54,6 +65,7 @@ rates = try container.decode([String:Double].self, forKey: .rates)
 date = Date(timeIntervalSince1970: timestamp)
 }
 }
+
 ```
 
 
@@ -61,6 +73,7 @@ date = Date(timeIntervalSince1970: timestamp)
 #### Response from OpenExchangeRates API
 ```javascript
 {
+<<<<<<< HEAD
 "disclaimer": "Usage subject to terms: https://openexchangerates.org/terms",
 "license": "https://openexchangerates.org/license",
 "timestamp": 1535799625,
@@ -244,7 +257,3 @@ date = Date(timeIntervalSince1970: timestamp)
 ## Author
 
 shawnbaek, shawn@shawnbaek.com
-
-## License
-
-OpenExchangeRatesClient is available under the MIT license. See the LICENSE file for more info.
