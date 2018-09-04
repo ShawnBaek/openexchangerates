@@ -34,15 +34,6 @@ openExchangeRatesClient.getRates(base: "USD") { (rates, error) in
 }
 ```
 
-
-### How to use
-
-- Use CocoaPod
-
-
-- Use Manually
-
-
 #### OpenExchangeRates.swift
 ```swift
 struct OpenExchangeRates: Decodable {
